@@ -1,0 +1,51 @@
+1.math模块
+2.字符串
+  转义符\
+    \000 = 空格
+    \n = 换行
+    \r = 回车
+  r/R可以输出原始字符串，忽略转义符  
+    print r'\n'
+    \n
+  运算
+    +：连接
+    *n：重复输出n次
+    [n]:第n+1个字符
+    [:]:截取一部分
+  格式化
+    %d 整数
+    %s 字符串
+    %c 字符及ASC2II码
+    %f 浮点数
+    %e 科学计数法
+    %X 大写的16进制
+    %o 八进制
+    %% %
+    m.n 最小总宽度m及小数点后位数n
+  三引号
+    ‘’‘
+    ’‘’ 简单理解就是：所见即所得（除了转义符）
+  unicode
+    u'str' Unicode字符串
+  字符串的一些内建函数
+3.列表
+  list.append() 对象可以是字符串，也可以是列表
+  del list[n]
+  list1 + list2
+  len(list)
+  3 in list
+  list[-2]
+  max(list)
+  list(tuple)
+  list.pop()
+  list.remove(obj)
+  a = list, change a, list will follow
+  a = list[:] or a = list.copy(), change a, list will not follow
+4.元组
+  tuple=(5,)元组只有一个元素时，需在元素后加逗号，否则括号会被当做运算符使用
+  tuple只能被整个删除del，不能单独删除某个元素，但如果tuple内有list，list本身是可变的
+  len(tuple)
+  tuple1 + tuple2
+  tuple*5
+  3 in tuple
+  tuple的意义是使代码更安全，因为元素不可修改
