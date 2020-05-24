@@ -1,0 +1,13 @@
+数据结构
+  列表
+    实现栈很容易
+    实现队列用collections模块中的deque方法
+    列表推导式
+    L = [1,2,3]
+    L1 = [x*2 for x in L]
+    >>>[2,4,6]
+    str.strip('xy')方法，判断第一个或最后一个字符是否为x or y，如果是则删除并判断下一位，直到有一位非x也非y
+  元组和序列
+    同时遍历两个序列：zip, 元素少的序列遍历完后，遍历也结束了
+    for q, a in zip(L1, L2):
+      print('this is {0}, that is {1}'.format(q, a) )
